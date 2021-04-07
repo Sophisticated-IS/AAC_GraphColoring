@@ -249,12 +249,12 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Benchmarks\BacktrackingAlgorithmBenchmark.cs" />
+        <Compile Include="Benchmarks\GraphColoringAlgorithmsBenchmark.cs" />
         <Compile Include="Main.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Алгоритм№1 ПолныйПеребор\BacktrackingAlgorithm.cs" />
         <Compile Include="Алгоритм№2Жадный Тривиальный\GreedyTrivialAlgorithm.cs" />
-        <Compile Include="Алгоритм№3Жадный по степени\RankGreedyAlgorithm.cs" />
+        <Compile Include="Алгоритм№3Жадный по степени\GreedySortedByRankAlgorithm.cs" />
         <Compile Include="Модели\IGraphColor.cs" />
         <Compile Include="Модели\NodeColorRGB.cs" />
         <Compile Include="Модели\NodeNumberRank.cs" />

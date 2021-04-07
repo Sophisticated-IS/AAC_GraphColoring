@@ -6,8 +6,6 @@ namespace AAC_Graph
 {
     public class BacktrackingAlgorithm : IGraphColor
     {
-        private static BacktrackingAlgorithm _backtrackingAlgorithm = new BacktrackingAlgorithm();
-
         private int _dim;
         private byte[,] _adjacencyMatrix;
         public (int colorsAmount, int[] coloredNodes) ColorGraph(int dim, ref byte[,] adjacencyMatrix)

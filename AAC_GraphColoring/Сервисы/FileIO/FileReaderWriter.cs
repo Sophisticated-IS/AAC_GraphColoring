@@ -6,6 +6,11 @@ namespace AAC_Graph.Сервисы.FileIO
 {
     public static class FileReaderWriter
     {
+        private static readonly string _baseApplicationPath = Directory.GetCurrentDirectory();
+        
+        public static readonly string InputFilePath = Path.Combine(_baseApplicationPath,@"ФайлыВвода_Вывода\Input.txt");
+        public static readonly string OutputFilePath = Path.Combine(_baseApplicationPath,@"ФайлыВвода_Вывода\Output.txt");
+        
         public static byte[,] ReadAdjacencyMatrix(string filePath,int n)
         {
             if (!File.Exists(filePath)) return null;

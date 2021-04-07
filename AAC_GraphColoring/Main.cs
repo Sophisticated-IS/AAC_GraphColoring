@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using AAC_Graph.Сервисы.FileIO;
-using AAC_Graph.Сервисы.Randomizer;
+using AAC_Graph.Benchmarks;
+using BenchmarkDotNet.Running;
 
 namespace AAC_Graph
 {
@@ -20,6 +20,7 @@ namespace AAC_Graph
 
         #endregion
 
+        
         public static void Main(string[] args)
         {
             #region ConsoleConfigurationStuff
@@ -31,34 +32,10 @@ namespace AAC_Graph
 
             #endregion
 
-            const int dimension = 11;
-            var ewfedsw = Randomizer.GetRandomAdjacencyMatrix(dimension);
-                //todo hard code path
-            FileReaderWriter.WriteAdjacencyMatrix(
-                @"C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\ФайлыВвода_Вывода\Input.txt"
-                ,ref ewfedsw);
-
-            var dataFromFile = FileReaderWriter.ReadAdjacencyMatrix(
-                @"C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\ФайлыВвода_Вывода\Input.txt"
-                , dimension);
-            
-            
-            var algo = new GreedyTrivialAlgorithm();
-            var algo2 = new RankGreedyAlgorithm();
-            var f1 = algo.ColorGraph(dimension, ref dataFromFile);
-            var f2 = algo2.ColorGraph(dimension, ref dataFromFile);
-            Console.WriteLine($"Greedy: {f1.colorsAmount}");
-            Console.WriteLine($"Жадный: {f2.colorsAmount}");
-            
-            var govno = new BacktrackingAlgorithm();
-            
-            var resBack = govno.ColorGraph(dimension, ref dataFromFile);
-            Console.WriteLine("Backtracking:" + resBack.colorsAmount);
-
-           // BenchmarkRunner.Run<BacktrackingAlgorithmBenchmark>();
-
-
-            Console.ReadLine();
+           BenchmarkRunner.Run<GraphColoringAlgorithmsBenchmark>();
+           
+           Console.WriteLine("Введите любую клавишу для выхода ...");
+           Console.ReadLine();
         }
     }
 }

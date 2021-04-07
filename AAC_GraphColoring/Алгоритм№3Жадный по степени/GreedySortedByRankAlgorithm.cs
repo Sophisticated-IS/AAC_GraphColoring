@@ -4,7 +4,7 @@ using AAC_Graph.Модели;
 
 namespace AAC_Graph
 {
-    public sealed class RankGreedyAlgorithm : IGraphColor
+    public sealed class GreedySortedByRankAlgorithm : IGraphColor
     {
         public (int colorsAmount, int[] coloredNodes) ColorGraph(int dim, ref byte[,] adjacencyMatrix)
         {
