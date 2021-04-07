@@ -103,3 +103,7 @@ AAC_Graph/AAC_GraphColoring/obj/Release/
 /GraphTests/bin/Debug/System.Threading.Tasks.Extensions.xml
 /GraphTests/Tests.cs
 /GraphTests/bin/Debug/TraceReloggerLib.dll
+/AAC_GraphColoring/obj/Release/AAC_GraphColoring.csproj.CoreCompileInputs.cache
+/AAC_GraphColoring/obj/Release/AAC_GraphColoring.csprojAssemblyReference.cache
+/AAC_GraphColoring/obj/Release/AAC_GraphColoring.exe
+/AAC_GraphColoring/obj/Release/AAC_GraphColoring.pdb
