@@ -15,7 +15,7 @@ namespace AAC_Graph
 
 
             var localMax = int.MaxValue;
-            var globalResult = new Dictionary<int, int>(0);
+            var coloredNodesResult = new Dictionary<int, int>(0);
             for (int i = 0; i < _dim; i++)
             {
                 var result = RecursiveColorGraph(new Dictionary<int, int>(),i);
@@ -23,11 +23,11 @@ namespace AAC_Graph
                 if (localMax > max)
                 {
                     localMax = max;
-                    globalResult = result;
+                    coloredNodesResult = result;
                 }
             }
 
-            var commonFormat = GetResult(_dim, ref globalResult);
+            var commonFormat = GetResult(_dim, ref coloredNodesResult);
             var colorsAmount = commonFormat.Max();
 
             return (colorsAmount + 1, commonFormat);
@@ -40,27 +40,7 @@ namespace AAC_Graph
         /// <param name="currentNode">текущая вершина</param>
         private Dictionary<int,int> RecursiveColorGraph(Dictionary<int,int> currentColoredNodes,int currentNode)
         {
-            //цикл по всем цветам
-            for (int color = 0; color < 16777216; color++)
-            {
-                var isColorFound = true;
-                //цикл по всем раскрашенным вершинам
-                foreach (var nodeNumber in currentColoredNodes.Keys)
-                    //если вершина смежна с нашей
-                    if (_adjacencyMatrix[currentNode, nodeNumber] == 1)
-                        //если она уже использует наш цвет, то его нельзя использовать
-                        if (currentColoredNodes[nodeNumber] == color)
-                        {
-                            isColorFound = false;
-                            break;
-                        }
-
-                if (!isColorFound) continue;
-                
-                
-                currentColoredNodes.Add(currentNode,color);
-                break;
-            }
+            PaintCurrentNode(currentColoredNodes, currentNode);
 
             var minNodeColorsList = new Dictionary<int, int>(0);
             for (int i = 0; i < _dim; i++)
@@ -85,8 +65,36 @@ namespace AAC_Graph
             }
             return minNodeColorsList;
         }
-        
-        
+
+        /// <summary>
+        /// Раскрашивает вершину в свободный цвет
+        /// </summary>
+        private void PaintCurrentNode(Dictionary<int, int> currentColoredNodes, int currentNode)
+        {
+            //цикл по всем цветам
+            for (int color = 0; color < 16777216; color++)
+            {
+                var isColorFound = true;
+                //цикл по всем раскрашенным вершинам
+                foreach (var nodeNumber in currentColoredNodes.Keys)
+                    //если вершина смежна с нашей
+                    if (_adjacencyMatrix[currentNode, nodeNumber] == 1)
+                        //если она уже использует наш цвет, то его нельзя использовать
+                        if (currentColoredNodes[nodeNumber] == color)
+                        {
+                            isColorFound = false;
+                            break;
+                        }
+
+                if (!isColorFound) continue;
+
+
+                currentColoredNodes.Add(currentNode, color);
+                break;
+            }
+        }
+
+
         /// <summary>
         /// Проверяет меньше ли хроматическое число у сравниваемого элемента относительно минимального
         /// </summary>

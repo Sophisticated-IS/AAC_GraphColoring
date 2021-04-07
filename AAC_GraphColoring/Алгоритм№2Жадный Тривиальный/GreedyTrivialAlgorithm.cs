@@ -26,6 +26,10 @@ namespace AAC_Graph
             return (coloredNodes.Max() + 1, coloredNodes);
         }
 
+        /// <summary>
+        /// Инициализирует вершины как непокрашенные
+        /// </summary>
+        /// <param name="coloredNodes"></param>
         private  void InitAllNodesAsUncolored(ref int[] coloredNodes)
         {
             // -1 - не раскрашеннная вершина
@@ -35,6 +39,9 @@ namespace AAC_Graph
             }
         }
         
+        /// <summary>
+        /// Проверяет можно ли покрасить вершину в текущий цвет
+        /// </summary>
         private bool CanNodeBeColored(int node, int color, int dim, ref byte[,] adjacencyMatrix,
             ref int[] coloredList)
         {
