@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-20210406-211359</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>             Method</th><th>dim</th><th>   matrix</th><th> Mean</th><th>Error</th><th>StdDev</th><th>Rank</th>
+</tr>
+</thead><tbody><tr><td>BenchmarkGreedyAlgo</td><td>10000</td><td>Byte[100000000]</td><td>494.6 ms</td><td>8.40 ms</td><td>12.57 ms</td><td>1</td>
+</tr><tr><td>BenchmarkBacktrackingAlgo</td><td>10000</td><td>Byte[100000000]</td><td>60,911.3 ms</td><td>327.36 ms</td><td>306.21 ms</td><td>2</td>
+</tr></tbody></table>
+</body>
+</html>

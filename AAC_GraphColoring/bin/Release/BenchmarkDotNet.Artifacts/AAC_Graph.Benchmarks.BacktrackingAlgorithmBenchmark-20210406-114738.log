@@ -1,0 +1,51 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\8fd643a5-ba81-496e-bc5a-efecf3b0b4cd.bat
+// ***** Done, took 00:00:02 (2.7 sec)   *****
+// Found 1 benchmarks:
+//   BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob
+
+// Build Error: The build has failed!
+CS7036: There is no argument given that corresponds to the required formal parameter 'backtrackingAlgorithm' of 'BacktrackingAlgorithmBenchmark.BacktrackingAlgorithmBenchmark(BacktrackingAlgorithm, byte[*,*], int)'
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.html
+
+// * Detailed results *
+BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+  [Host] : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+
+
+|                    Method | Mean | Error | Rank |
+|-------------------------- |-----:|------:|-----:|
+| BenchmarkBacktrackingAlgo |   NA |    NA |    ? |
+
+Benchmarks with issues:
+  BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  Rank  : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:01 (1.36 sec), executed benchmarks: 0
+
+Global total time: 00:00:04 (4.07 sec), executed benchmarks: 0
+// * Artifacts cleanup *

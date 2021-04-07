@@ -1,0 +1,244 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\6bddc462-2456-4efd-b32e-0bcf4a2b57f2.bat
+// ***** Done, took 00:00:02 (2.18 sec)   *****
+// Found 2 benchmarks:
+//   BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+//   BacktrackingAlgorithmBenchmark.BenchmarkGreedyAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+
+// **************************
+// Benchmark: BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\6bddc462-2456-4efd-b32e-0bcf4a2b57f2.exe --benchmarkName "AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo(dim: 10000, matrix: System.Byte[,])" --job "Default" --benchmarkId 0 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 245300.00 ns, 245.3000 us/op
+WorkloadJitting  1: 1 op, 61109882600.00 ns, 61.1099 s/op
+
+WorkloadWarmup   1: 1 op, 61239236500.00 ns, 61.2392 s/op
+WorkloadWarmup   2: 1 op, 61053094000.00 ns, 61.0531 s/op
+WorkloadWarmup   3: 1 op, 60969047200.00 ns, 60.9690 s/op
+WorkloadWarmup   4: 1 op, 61317523500.00 ns, 61.3175 s/op
+WorkloadWarmup   5: 1 op, 61371117800.00 ns, 61.3711 s/op
+WorkloadWarmup   6: 1 op, 61552664800.00 ns, 61.5527 s/op
+WorkloadWarmup   7: 1 op, 61035691000.00 ns, 61.0357 s/op
+WorkloadWarmup   8: 1 op, 61063320200.00 ns, 61.0633 s/op
+WorkloadWarmup   9: 1 op, 60997053400.00 ns, 60.9971 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 60883165100.00 ns, 60.8832 s/op
+WorkloadActual   2: 1 op, 61031636400.00 ns, 61.0316 s/op
+WorkloadActual   3: 1 op, 60993945900.00 ns, 60.9939 s/op
+WorkloadActual   4: 1 op, 61008028100.00 ns, 61.0080 s/op
+WorkloadActual   5: 1 op, 60999628300.00 ns, 60.9996 s/op
+WorkloadActual   6: 1 op, 61170509800.00 ns, 61.1705 s/op
+WorkloadActual   7: 1 op, 61052855600.00 ns, 61.0529 s/op
+WorkloadActual   8: 1 op, 60982982100.00 ns, 60.9830 s/op
+WorkloadActual   9: 1 op, 61047214700.00 ns, 61.0472 s/op
+WorkloadActual  10: 1 op, 60956257900.00 ns, 60.9563 s/op
+WorkloadActual  11: 1 op, 61025791400.00 ns, 61.0258 s/op
+WorkloadActual  12: 1 op, 60824739600.00 ns, 60.8247 s/op
+WorkloadActual  13: 1 op, 59902832600.00 ns, 59.9028 s/op
+WorkloadActual  14: 1 op, 60647587700.00 ns, 60.6476 s/op
+WorkloadActual  15: 1 op, 61142510600.00 ns, 61.1425 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 60883165100.00 ns, 60.8832 s/op
+WorkloadResult   2: 1 op, 61031636400.00 ns, 61.0316 s/op
+WorkloadResult   3: 1 op, 60993945900.00 ns, 60.9939 s/op
+WorkloadResult   4: 1 op, 61008028100.00 ns, 61.0080 s/op
+WorkloadResult   5: 1 op, 60999628300.00 ns, 60.9996 s/op
+WorkloadResult   6: 1 op, 61170509800.00 ns, 61.1705 s/op
+WorkloadResult   7: 1 op, 61052855600.00 ns, 61.0529 s/op
+WorkloadResult   8: 1 op, 60982982100.00 ns, 60.9830 s/op
+WorkloadResult   9: 1 op, 61047214700.00 ns, 61.0472 s/op
+WorkloadResult  10: 1 op, 60956257900.00 ns, 60.9563 s/op
+WorkloadResult  11: 1 op, 61025791400.00 ns, 61.0258 s/op
+WorkloadResult  12: 1 op, 60824739600.00 ns, 60.8247 s/op
+WorkloadResult  13: 1 op, 59902832600.00 ns, 59.9028 s/op
+WorkloadResult  14: 1 op, 60647587700.00 ns, 60.6476 s/op
+WorkloadResult  15: 1 op, 61142510600.00 ns, 61.1425 s/op
+
+// AfterAll
+// Benchmark Process 10340 has exited with code 0
+
+Mean = 60.911 s, StdErr = 0.079 s (0.13%), N = 15, StdDev = 0.306 s
+Min = 59.903 s, Q1 = 60.920 s, Median = 61.000 s, Q3 = 61.039 s, Max = 61.171 s
+IQR = 0.120 s, LowerFence = 60.740 s, UpperFence = 61.219 s
+ConfidenceInterval = [60.584 s; 61.239 s] (CI 99.9%), Margin = 0.327 s (0.54% of Mean)
+Skewness = -2.33, Kurtosis = 7.95, MValue = 2
+
+// **************************
+// Benchmark: BacktrackingAlgorithmBenchmark.BenchmarkGreedyAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\6bddc462-2456-4efd-b32e-0bcf4a2b57f2.exe --benchmarkName "AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark.BenchmarkGreedyAlgo(dim: 10000, matrix: System.Byte[,])" --job "Default" --benchmarkId 1 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 253000.00 ns, 253.0000 us/op
+WorkloadJitting  1: 1 op, 487145700.00 ns, 487.1457 ms/op
+
+WorkloadWarmup   1: 1 op, 495124400.00 ns, 495.1244 ms/op
+WorkloadWarmup   2: 1 op, 485881700.00 ns, 485.8817 ms/op
+WorkloadWarmup   3: 1 op, 497452700.00 ns, 497.4527 ms/op
+WorkloadWarmup   4: 1 op, 494848000.00 ns, 494.8480 ms/op
+WorkloadWarmup   5: 1 op, 493264000.00 ns, 493.2640 ms/op
+WorkloadWarmup   6: 1 op, 529131100.00 ns, 529.1311 ms/op
+WorkloadWarmup   7: 1 op, 492264800.00 ns, 492.2648 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 510934300.00 ns, 510.9343 ms/op
+WorkloadActual   2: 1 op, 518150200.00 ns, 518.1502 ms/op
+WorkloadActual   3: 1 op, 487725300.00 ns, 487.7253 ms/op
+WorkloadActual   4: 1 op, 484153900.00 ns, 484.1539 ms/op
+WorkloadActual   5: 1 op, 482999100.00 ns, 482.9991 ms/op
+WorkloadActual   6: 1 op, 483101300.00 ns, 483.1013 ms/op
+WorkloadActual   7: 1 op, 516543300.00 ns, 516.5433 ms/op
+WorkloadActual   8: 1 op, 569028900.00 ns, 569.0289 ms/op
+WorkloadActual   9: 1 op, 504667600.00 ns, 504.6676 ms/op
+WorkloadActual  10: 1 op, 503127400.00 ns, 503.1274 ms/op
+WorkloadActual  11: 1 op, 573400100.00 ns, 573.4001 ms/op
+WorkloadActual  12: 1 op, 526462200.00 ns, 526.4622 ms/op
+WorkloadActual  13: 1 op, 543283800.00 ns, 543.2838 ms/op
+WorkloadActual  14: 1 op, 492082200.00 ns, 492.0822 ms/op
+WorkloadActual  15: 1 op, 597752300.00 ns, 597.7523 ms/op
+WorkloadActual  16: 1 op, 521814200.00 ns, 521.8142 ms/op
+WorkloadActual  17: 1 op, 487652600.00 ns, 487.6526 ms/op
+WorkloadActual  18: 1 op, 484957400.00 ns, 484.9574 ms/op
+WorkloadActual  19: 1 op, 481222500.00 ns, 481.2225 ms/op
+WorkloadActual  20: 1 op, 487938000.00 ns, 487.9380 ms/op
+WorkloadActual  21: 1 op, 489300200.00 ns, 489.3002 ms/op
+WorkloadActual  22: 1 op, 483869900.00 ns, 483.8699 ms/op
+WorkloadActual  23: 1 op, 499381300.00 ns, 499.3813 ms/op
+WorkloadActual  24: 1 op, 488274400.00 ns, 488.2744 ms/op
+WorkloadActual  25: 1 op, 491843600.00 ns, 491.8436 ms/op
+WorkloadActual  26: 1 op, 489471300.00 ns, 489.4713 ms/op
+WorkloadActual  27: 1 op, 490132900.00 ns, 490.1329 ms/op
+WorkloadActual  28: 1 op, 484728500.00 ns, 484.7285 ms/op
+WorkloadActual  29: 1 op, 496119100.00 ns, 496.1191 ms/op
+WorkloadActual  30: 1 op, 498810000.00 ns, 498.8100 ms/op
+WorkloadActual  31: 1 op, 491548700.00 ns, 491.5487 ms/op
+WorkloadActual  32: 1 op, 486750000.00 ns, 486.7500 ms/op
+WorkloadActual  33: 1 op, 485756700.00 ns, 485.7567 ms/op
+WorkloadActual  34: 1 op, 489462100.00 ns, 489.4621 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 510934300.00 ns, 510.9343 ms/op
+WorkloadResult   2: 1 op, 518150200.00 ns, 518.1502 ms/op
+WorkloadResult   3: 1 op, 487725300.00 ns, 487.7253 ms/op
+WorkloadResult   4: 1 op, 484153900.00 ns, 484.1539 ms/op
+WorkloadResult   5: 1 op, 482999100.00 ns, 482.9991 ms/op
+WorkloadResult   6: 1 op, 483101300.00 ns, 483.1013 ms/op
+WorkloadResult   7: 1 op, 516543300.00 ns, 516.5433 ms/op
+WorkloadResult   8: 1 op, 504667600.00 ns, 504.6676 ms/op
+WorkloadResult   9: 1 op, 503127400.00 ns, 503.1274 ms/op
+WorkloadResult  10: 1 op, 526462200.00 ns, 526.4622 ms/op
+WorkloadResult  11: 1 op, 492082200.00 ns, 492.0822 ms/op
+WorkloadResult  12: 1 op, 521814200.00 ns, 521.8142 ms/op
+WorkloadResult  13: 1 op, 487652600.00 ns, 487.6526 ms/op
+WorkloadResult  14: 1 op, 484957400.00 ns, 484.9574 ms/op
+WorkloadResult  15: 1 op, 481222500.00 ns, 481.2225 ms/op
+WorkloadResult  16: 1 op, 487938000.00 ns, 487.9380 ms/op
+WorkloadResult  17: 1 op, 489300200.00 ns, 489.3002 ms/op
+WorkloadResult  18: 1 op, 483869900.00 ns, 483.8699 ms/op
+WorkloadResult  19: 1 op, 499381300.00 ns, 499.3813 ms/op
+WorkloadResult  20: 1 op, 488274400.00 ns, 488.2744 ms/op
+WorkloadResult  21: 1 op, 491843600.00 ns, 491.8436 ms/op
+WorkloadResult  22: 1 op, 489471300.00 ns, 489.4713 ms/op
+WorkloadResult  23: 1 op, 490132900.00 ns, 490.1329 ms/op
+WorkloadResult  24: 1 op, 484728500.00 ns, 484.7285 ms/op
+WorkloadResult  25: 1 op, 496119100.00 ns, 496.1191 ms/op
+WorkloadResult  26: 1 op, 498810000.00 ns, 498.8100 ms/op
+WorkloadResult  27: 1 op, 491548700.00 ns, 491.5487 ms/op
+WorkloadResult  28: 1 op, 486750000.00 ns, 486.7500 ms/op
+WorkloadResult  29: 1 op, 485756700.00 ns, 485.7567 ms/op
+WorkloadResult  30: 1 op, 489462100.00 ns, 489.4621 ms/op
+
+// AfterAll
+// Benchmark Process 17400 has exited with code 0
+
+Mean = 494.633 ms, StdErr = 2.294 ms (0.46%), N = 30, StdDev = 12.567 ms
+Min = 481.223 ms, Q1 = 486.005 ms, Median = 489.467 ms, Q3 = 499.238 ms, Max = 526.462 ms
+IQR = 13.233 ms, LowerFence = 466.155 ms, UpperFence = 519.089 ms
+ConfidenceInterval = [486.237 ms; 503.029 ms] (CI 99.9%), Margin = 8.396 ms (1.70% of Mean)
+Skewness = 1.16, Kurtosis = 3.11, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.html
+
+// * Detailed results *
+BacktrackingAlgorithmBenchmark.BenchmarkGreedyAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+Runtime = .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT; GC = Concurrent Workstation
+Mean = 494.633 ms, StdErr = 2.294 ms (0.46%), N = 30, StdDev = 12.567 ms
+Min = 481.223 ms, Q1 = 486.005 ms, Median = 489.467 ms, Q3 = 499.238 ms, Max = 526.462 ms
+IQR = 13.233 ms, LowerFence = 466.155 ms, UpperFence = 519.089 ms
+ConfidenceInterval = [486.237 ms; 503.029 ms] (CI 99.9%), Margin = 8.396 ms (1.70% of Mean)
+Skewness = 1.16, Kurtosis = 3.11, MValue = 2
+-------------------- Histogram --------------------
+[475.914 ms ; 492.849 ms) | @@@@@@@@@@@@@@@@@@@@
+[492.849 ms ; 505.702 ms) | @@@@@
+[505.702 ms ; 516.194 ms) | @
+[516.194 ms ; 526.811 ms) | @@@@
+---------------------------------------------------
+
+BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=10000, matrix=Byte[100000000]]
+Runtime = .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT; GC = Concurrent Workstation
+Mean = 60.911 s, StdErr = 0.079 s (0.13%), N = 15, StdDev = 0.306 s
+Min = 59.903 s, Q1 = 60.920 s, Median = 61.000 s, Q3 = 61.039 s, Max = 61.171 s
+IQR = 0.120 s, LowerFence = 60.740 s, UpperFence = 61.219 s
+ConfidenceInterval = [60.584 s; 61.239 s] (CI 99.9%), Margin = 0.327 s (0.54% of Mean)
+Skewness = -2.33, Kurtosis = 7.95, MValue = 2
+-------------------- Histogram --------------------
+[59.740 s ; 61.333 s) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+
+
+|                    Method |   dim |          matrix |        Mean |     Error |    StdDev | Rank |
+|-------------------------- |------ |---------------- |------------:|----------:|----------:|-----:|
+|       BenchmarkGreedyAlgo | 10000 | Byte[100000000] |    494.6 ms |   8.40 ms |  12.57 ms |    1 |
+| BenchmarkBacktrackingAlgo | 10000 | Byte[100000000] | 60,911.3 ms | 327.36 ms | 306.21 ms |    2 |
+
+// * Hints *
+Outliers
+  BacktrackingAlgorithmBenchmark.BenchmarkGreedyAlgo: Default       -> 4 outliers were removed (543.28 ms..597.75 ms)
+  BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: Default -> 2 outliers were detected (59.90 s, 60.65 s)
+
+// * Legends *
+  dim    : Value of the 'dim' parameter
+  matrix : Value of the 'matrix' parameter
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  Rank   : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:26:09 (1569.85 sec), executed benchmarks: 2
+
+Global total time: 00:26:12 (1572.05 sec), executed benchmarks: 2
+// * Artifacts cleanup *

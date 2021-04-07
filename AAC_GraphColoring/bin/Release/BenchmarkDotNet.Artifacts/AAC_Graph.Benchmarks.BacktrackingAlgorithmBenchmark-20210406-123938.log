@@ -1,0 +1,75 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\47b3cb80-aca6-4107-8438-24cf70d4d510.bat
+// ***** Done, took 00:00:02 (2.66 sec)   *****
+// Found 3 benchmarks:
+//   BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=5, matrix=Byte[25]]
+//   BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoCustom: DefaultJob [dim=5, matrix=Byte[25]]
+//   BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoLenin: DefaultJob [matrix=Object[1]]
+
+// Build Error: The build has failed!
+CS0030: Cannot convert type 'object[]' to 'bool[*,*]'
+
+
+// Build Error: The build has failed!
+CS0030: Cannot convert type 'object[]' to 'bool[*,*]'
+
+
+// Build Error: The build has failed!
+CS0030: Cannot convert type 'object[]' to 'bool[*,*]'
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.BacktrackingAlgorithmBenchmark-report.html
+
+// * Detailed results *
+BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=5, matrix=Byte[25]]
+Runtime = ; GC = 
+There are not any results runs
+
+BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoCustom: DefaultJob [dim=5, matrix=Byte[25]]
+Runtime = ; GC = 
+There are not any results runs
+
+BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoLenin: DefaultJob [matrix=Object[1]]
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+  [Host] : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+
+
+|                          Method | dim |    matrix | Mean | Error | Rank |
+|-------------------------------- |---- |---------- |-----:|------:|-----:|
+|       BenchmarkBacktrackingAlgo |   5 |  Byte[25] |   NA |    NA |    ? |
+| BenchmarkBacktrackingAlgoCustom |   5 |  Byte[25] |   NA |    NA |    ? |
+|  BenchmarkBacktrackingAlgoLenin |   ? | Object[1] |   NA |    NA |    ? |
+
+Benchmarks with issues:
+  BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgo: DefaultJob [dim=5, matrix=Byte[25]]
+  BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoCustom: DefaultJob [dim=5, matrix=Byte[25]]
+  BacktrackingAlgorithmBenchmark.BenchmarkBacktrackingAlgoLenin: DefaultJob [matrix=Object[1]]
+
+// * Legends *
+  dim    : Value of the 'dim' parameter
+  matrix : Value of the 'matrix' parameter
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  Rank   : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:01 (1.36 sec), executed benchmarks: 0
+
+Global total time: 00:00:04 (4.03 sec), executed benchmarks: 0
+// * Artifacts cleanup *

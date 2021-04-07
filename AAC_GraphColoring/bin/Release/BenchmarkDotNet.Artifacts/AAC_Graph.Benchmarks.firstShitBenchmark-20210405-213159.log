@@ -1,0 +1,121 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+BuildScript: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\f0760c41-7360-454e-bcbc-86e047df5b5b.bat
+// ***** Done, took 00:00:03 (3.18 sec)   *****
+// Found 1 benchmarks:
+//   firstShitBenchmark.GetTEST: DefaultJob
+
+// **************************
+// Benchmark: firstShitBenchmark.GetTEST: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: C:\Users\Sova IS\RiderProjects\AAC_Graph\AAC_GraphColoring\bin\Release\f0760c41-7360-454e-bcbc-86e047df5b5b.exe --benchmarkName "AAC_Graph.Benchmarks.firstShitBenchmark.GetTEST" --job "Default" --benchmarkId 0 in 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 252800.00 ns, 252.8000 us/op
+WorkloadJitting  1: 1 op, 880047900.00 ns, 880.0479 ms/op
+
+WorkloadWarmup   1: 1 op, 869061500.00 ns, 869.0615 ms/op
+WorkloadWarmup   2: 1 op, 880559600.00 ns, 880.5596 ms/op
+WorkloadWarmup   3: 1 op, 872411700.00 ns, 872.4117 ms/op
+WorkloadWarmup   4: 1 op, 887484000.00 ns, 887.4840 ms/op
+WorkloadWarmup   5: 1 op, 876115600.00 ns, 876.1156 ms/op
+WorkloadWarmup   6: 1 op, 880313300.00 ns, 880.3133 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 907505500.00 ns, 907.5055 ms/op
+WorkloadActual   2: 1 op, 870471300.00 ns, 870.4713 ms/op
+WorkloadActual   3: 1 op, 871596500.00 ns, 871.5965 ms/op
+WorkloadActual   4: 1 op, 884922600.00 ns, 884.9226 ms/op
+WorkloadActual   5: 1 op, 874317000.00 ns, 874.3170 ms/op
+WorkloadActual   6: 1 op, 876417100.00 ns, 876.4171 ms/op
+WorkloadActual   7: 1 op, 890949500.00 ns, 890.9495 ms/op
+WorkloadActual   8: 1 op, 896887400.00 ns, 896.8874 ms/op
+WorkloadActual   9: 1 op, 914599600.00 ns, 914.5996 ms/op
+WorkloadActual  10: 1 op, 884515000.00 ns, 884.5150 ms/op
+WorkloadActual  11: 1 op, 886921000.00 ns, 886.9210 ms/op
+WorkloadActual  12: 1 op, 882058400.00 ns, 882.0584 ms/op
+WorkloadActual  13: 1 op, 881464200.00 ns, 881.4642 ms/op
+WorkloadActual  14: 1 op, 888180200.00 ns, 888.1802 ms/op
+WorkloadActual  15: 1 op, 875624400.00 ns, 875.6244 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 907505500.00 ns, 907.5055 ms/op
+WorkloadResult   2: 1 op, 870471300.00 ns, 870.4713 ms/op
+WorkloadResult   3: 1 op, 871596500.00 ns, 871.5965 ms/op
+WorkloadResult   4: 1 op, 884922600.00 ns, 884.9226 ms/op
+WorkloadResult   5: 1 op, 874317000.00 ns, 874.3170 ms/op
+WorkloadResult   6: 1 op, 876417100.00 ns, 876.4171 ms/op
+WorkloadResult   7: 1 op, 890949500.00 ns, 890.9495 ms/op
+WorkloadResult   8: 1 op, 896887400.00 ns, 896.8874 ms/op
+WorkloadResult   9: 1 op, 884515000.00 ns, 884.5150 ms/op
+WorkloadResult  10: 1 op, 886921000.00 ns, 886.9210 ms/op
+WorkloadResult  11: 1 op, 882058400.00 ns, 882.0584 ms/op
+WorkloadResult  12: 1 op, 881464200.00 ns, 881.4642 ms/op
+WorkloadResult  13: 1 op, 888180200.00 ns, 888.1802 ms/op
+WorkloadResult  14: 1 op, 875624400.00 ns, 875.6244 ms/op
+
+// AfterAll
+// Benchmark Process 13972 has exited with code 0
+
+Mean = 883.702 ms, StdErr = 2.735 ms (0.31%), N = 14, StdDev = 10.233 ms
+Min = 870.471 ms, Q1 = 875.823 ms, Median = 883.287 ms, Q3 = 887.865 ms, Max = 907.506 ms
+IQR = 12.043 ms, LowerFence = 857.758 ms, UpperFence = 905.930 ms
+ConfidenceInterval = [872.159 ms; 895.246 ms] (CI 99.9%), Margin = 11.543 ms (1.31% of Mean)
+Skewness = 0.7, Kurtosis = 2.75, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.firstShitBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.firstShitBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\AAC_Graph.Benchmarks.firstShitBenchmark-report.html
+
+// * Detailed results *
+firstShitBenchmark.GetTEST: DefaultJob
+Runtime = .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT; GC = Concurrent Workstation
+Mean = 883.702 ms, StdErr = 2.735 ms (0.31%), N = 14, StdDev = 10.233 ms
+Min = 870.471 ms, Q1 = 875.823 ms, Median = 883.287 ms, Q3 = 887.865 ms, Max = 907.506 ms
+IQR = 12.043 ms, LowerFence = 857.758 ms, UpperFence = 905.930 ms
+ConfidenceInterval = [872.159 ms; 895.246 ms] (CI 99.9%), Margin = 11.543 ms (1.31% of Mean)
+Skewness = 0.7, Kurtosis = 2.75, MValue = 2
+-------------------- Histogram --------------------
+[864.899 ms ; 913.078 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+  DefaultJob : .NET Framework 4.8 (4.8.4341.0), X86 LegacyJIT
+
+
+|  Method |     Mean |    Error |   StdDev | Rank |
+|-------- |---------:|---------:|---------:|-----:|
+| GetTEST | 883.7 ms | 11.54 ms | 10.23 ms |    1 |
+
+// * Hints *
+Outliers
+  firstShitBenchmark.GetTEST: Default -> 1 outlier  was  removed (914.60 ms)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  Rank   : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:21 (21.37 sec), executed benchmarks: 1
+
+Global total time: 00:00:24 (24.57 sec), executed benchmarks: 1
+// * Artifacts cleanup *
