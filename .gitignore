@@ -1,5 +1,8 @@
 ﻿/.idea/.idea.AAC_Graph/.idea/
 /packages/
+AAC_Graph/AAC_GraphColoring/obj/Release/
+/AAC_GraphColoring/bin/
+/GraphTests/bin
 /AAC_Graph.sln.DotSettings.user
 /GraphTests/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 /GraphTests/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
