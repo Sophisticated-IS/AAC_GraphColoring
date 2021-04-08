@@ -15,7 +15,7 @@ namespace AAC_Graph.Benchmarks
         private static readonly IGraphColor GreedySortedByRankAlgorithm = new GreedySortedByRankAlgorithm();
 
         #region Benchmarks
-        
+
         [Benchmark(Baseline = true)]
         [ArgumentsSource(nameof(BacktrackingAlgoArgumentsProvider))]
         public void BenchmarkBacktrackingAlgorithm(int dim, ref byte[,] matrix)
@@ -29,14 +29,14 @@ namespace AAC_Graph.Benchmarks
         {
             GreedyTrivialAlgorithm.ColorGraph(dim, ref matrix);
         }
-        
+
         [Benchmark]
         [ArgumentsSource(nameof(GreedySortedByRankAlgoArgumentsProvider))]
         public void BenchmarkGreedySortedByRankAlgorithm(int dim, ref byte[,] matrix)
         {
             GreedySortedByRankAlgorithm.ColorGraph(dim, ref matrix);
         }
-        
+
         #endregion
 
         #region Data Providers
@@ -48,16 +48,17 @@ namespace AAC_Graph.Benchmarks
             yield return new object[] {dim, testData};
         }
 
+
         public IEnumerable<object[]> GreedyTrivialAlgoArgumentsProvider()
         {
-            const int dim = 10000;
+            const int dim = 5;
             var testData = Randomizer.GetRandomAdjacencyMatrix(dim);
             yield return new object[] {dim, testData};
         }
 
         public IEnumerable<object[]> GreedySortedByRankAlgoArgumentsProvider()
         {
-            const int dim = 10000;
+            const int dim = 5;
             var testData = Randomizer.GetRandomAdjacencyMatrix(dim);
             yield return new object[] {dim, testData};
         }

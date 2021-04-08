@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using AAC_Graph.Benchmarks;
 using AAC_Graph.Сервисы.FileIO;
@@ -34,28 +35,82 @@ namespace AAC_Graph
 
             #endregion
 
-             // BenchmarkRunner.Run<GraphColoringAlgorithmsBenchmark>();
-            
-             // Console.WriteLine(datenow);
-            // const int dim = 11;
-            //
-            // var data = Randomizer.GetRandomAdjacencyMatrix(dim);
-            //
-            // var backTrackingAlgo = new BacktrackingAlgorithm();
-            // var greedyTrivial = new GreedyTrivialAlgorithm();
-            // var greedyRank = new GreedySortedByRankAlgorithm();
-            // var r1 = backTrackingAlgo.ColorGraph(dim, ref data);
-            // var r2 = greedyTrivial.ColorGraph(dim, ref data);
-            // var r3 = greedyRank.ColorGraph(dim, ref data);
-            //
-            // Console.WriteLine(DateTime.Now.Subtract(datenow).TotalSeconds);
-            // Console.WriteLine($"Перебор:{r1.colorsAmount}");
-            // Console.WriteLine($"Жадный со степенями:{r3.colorsAmount}");
-            // Console.WriteLine($"Жадный тривиальный:{r2.colorsAmount}");
-            // Console.WriteLine();
+            BenchmarkRunner.Run<GraphColoringAlgorithmsBenchmark>();
+             
+            // StartProgramMenu();
 
             Console.WriteLine("Введите любую клавишу для выхода ...");
             Console.ReadLine();
         }
+
+        [Obsolete]
+        public static void StartProgramMenu()
+        {
+            var menuList = new List<string>()
+            {
+                "1 - Запустить авто - бенчмарк",
+                "2 - Запустить ручное тестирование"
+            };
+            
+            Console.WriteLine("Здравствуйте! Вас приветствует программа для расчета хроматического числа графа)");
+            Console.WriteLine("Выберете, что вы бы хотели сделать?");
+
+            foreach (var menuItem in menuList)
+            {
+                Console.WriteLine(menuItem);
+            }
+            
+            m1: var key = Console.ReadKey();
+            Console.WriteLine();
+            int numberAlgo;
+            switch (key.KeyChar)
+            {
+                case '1':
+                    numberAlgo = ChooseAlgo(); 
+                    
+                    break;
+                case '2':
+                    numberAlgo = ChooseAlgo();
+                    break;
+                
+                default:
+                    Console.WriteLine("Неверно введен пункт меню");
+                    Console.WriteLine("Введите номер пункта заново!");
+                    goto m1;
+            }
+        }
+
+        public static int ChooseAlgo()
+        {
+            var menuList = new List<string>()
+            {
+                "1 - Алгоритм перебора",
+                "2 - Алгоритм жадный тривиальный",
+                "3 - Алгоритм жадный с сортировкой по невозрастанию степени вершин"
+            }; 
+                m1: var key = Console.ReadKey();
+                Console.WriteLine();
+                switch (key.KeyChar)
+                {
+                case '1':
+                    return 1;
+                case '2':
+                    return 2;
+                case '3':
+                    return 3; 
+                
+                default:
+                Console.WriteLine("Неверно введен пункт меню");
+                Console.WriteLine("Введите номер пункта заново!");
+                goto m1;
+            }
+          
+        }
+
+        // public static int ChooseDimension()
+        // {
+        //     Console.WriteLine("Введите размерность");
+        //     Console.ReadLine("")
+        // }
     }
 }
